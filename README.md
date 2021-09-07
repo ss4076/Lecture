@@ -1,2 +1,2 @@
-# Leacture
-ios leacture
+# Lecture
+ios lecture
