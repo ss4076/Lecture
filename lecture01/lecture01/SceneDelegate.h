@@ -1,0 +1,15 @@
+//
+//  SceneDelegate.h
+//  lecture01
+//
+//  Created by raonsecure on 2021/09/07.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
+
+@property (strong, nonatomic) UIWindow * window;
+
+@end
+
