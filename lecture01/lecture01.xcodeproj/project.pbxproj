@@ -17,6 +17,7 @@
 		1B8B2FD126E74C310014384C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B2FD026E74C310014384C /* main.m */; };
 		1B8B2FDB26E74C310014384C /* lecture01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B2FDA26E74C310014384C /* lecture01Tests.m */; };
 		1B8B2FE626E74C310014384C /* lecture01UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B2FE526E74C310014384C /* lecture01UITests.m */; };
+		1B8B2FFB26E76B030014384C /* ValidateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B2FFA26E76B030014384C /* ValidateUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		1B8B2FE126E74C310014384C /* lecture01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lecture01UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B8B2FE526E74C310014384C /* lecture01UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lecture01UITests.m; sourceTree = "<group>"; };
 		1B8B2FE726E74C310014384C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B8B2FF926E76B030014384C /* ValidateUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValidateUtil.h; sourceTree = "<group>"; };
+		1B8B2FFA26E76B030014384C /* ValidateUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValidateUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				1B8B2FCF26E74C310014384C /* Info.plist */,
 				1B8B2FD026E74C310014384C /* main.m */,
 				1B8B2FC726E74C2D0014384C /* lecture01.xcdatamodeld */,
+				1B8B2FF926E76B030014384C /* ValidateUtil.h */,
+				1B8B2FFA26E76B030014384C /* ValidateUtil.m */,
 			);
 			path = lecture01;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 				1B8B2FBD26E74C2D0014384C /* AppDelegate.m in Sources */,
 				1B8B2FC026E74C2D0014384C /* SceneDelegate.m in Sources */,
 				1B8B2FC926E74C2D0014384C /* lecture01.xcdatamodeld in Sources */,
+				1B8B2FFB26E76B030014384C /* ValidateUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

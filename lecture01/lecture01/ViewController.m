@@ -6,8 +6,8 @@
 //
 
 #import "ViewController.h"
+#import "ValidateUtil.h"
 
-static const NSInteger MAX_LEN = 5;
 
 void UncaughtExceptionsHandler(NSException *exception) {
     
@@ -28,65 +28,28 @@ void UncaughtExceptionsHandler(NSException *exception) {
 @implementation ViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
+    [super viewDidLoad];
+    
+    // Do any additional setup after loading the view.
     NSSetUncaughtExceptionHandler(&UncaughtExceptionsHandler);
 }
 
 - (IBAction)loginAction:(id)sender {
     
-    if (![self validateInput]) {
+    if (![ValidateUtil validateInput:self.idTxtFld.text withPwText:self.pwTxtFld.text]) {
         self.idTxtFld.text = @"";
         self.pwTxtFld.text = @"";
         return;
     }
-    
 //    @try {
-//        [self validateInput2];
+//        [ValidateUtil validateInput2:self.idTxtFld.text withPwText:self.pwTxtFld.text];
 //    } @catch (NSException *e) {
 //        NSLog(@"%@", e.reason);
 //    } @finally {
 //        self.idTxtFld.text = @"";
 //        self.pwTxtFld.text = @"";
 //    }
-}
-
-// https://lldb.llvm.org/use/map.html
-- (BOOL)validateInput {
-    
-//    [self performSelector:@selector(die_die)];
-    
-    NSString *inputId = [self.idTxtFld text];
-    NSString *inputPw = [self.pwTxtFld text];
-    
-    if (MAX_LEN > [inputId length]) {
-        NSLog(@"inputId len: %d", (int)[inputId length]);
-        return NO;
-    }
-    
-    if (MAX_LEN > [inputPw length]) {
-        NSLog(@"inputPw len: %d", (int)[inputPw length]);
-        return NO;
-    }
-    return YES;
-}
-
-
-- (void)validateInput2 {
-    
-//    [self performSelector:@selector(die_die)];
-    
-    NSString *inputId = [self.idTxtFld text];
-    NSString *inputPw = [self.pwTxtFld text];
-    
-    if (MAX_LEN > [inputId length]) {
-        @throw [NSException exceptionWithName:@"invalid param" reason:[NSString stringWithFormat:@"inputId len: %d", (int)[inputId length]] userInfo:nil];
-    }
-    
-    if (MAX_LEN > [inputPw length]) {
-        @throw [NSException exceptionWithName:@"invalid param" reason:[NSString stringWithFormat:@"inputPw len: %d", (int)[inputPw length]] userInfo:nil];
-    }
 }
 
 
