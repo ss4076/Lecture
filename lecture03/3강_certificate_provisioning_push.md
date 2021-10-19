@@ -19,3 +19,12 @@
       - 기기에 설치된 프로비저닝 프로파일이 반드시 필요
         - 프로비저닝 프로파일에 명시된 프로비저닝 프로파일을 설치해야 apple의 인증서로 코드 서명된 앱이 아니더라도 기기에서 실행할 수 있음
 
+- 참조
+  - https://engineering.linecorp.com/ko/blog/ios-code-signing/
+
+
+
+- Push 
+  - APNS
+    - Apple push notification service
+  - FCM
