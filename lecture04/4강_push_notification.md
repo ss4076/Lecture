@@ -26,3 +26,4 @@ Remote Notification은 개발용, 배포용 인증서에 따른 device 토큰을
   - 레거시 방식 APNs, FCM 방식 예제 (live coding)
 
 <img src="/Users/dongjunpark/gitlab/github/Lecture/assets/스크린샷 2021-10-21 오전 10.27.25.png" alt="스크린샷 2021-10-21 오전 7.39.20" style="zoom:80%;" />
+
