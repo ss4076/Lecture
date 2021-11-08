@@ -22,14 +22,14 @@
 
 - 인증서 및 프로비저닝 프로파일 개념
 - 코드서명
-- Push apns, fcm (live coding)
+- Push -apns, fcm (live coding), local push
   - server - client
 
 강좌 5강 
 
 - mdm 동작방식 및 원리
 
-강좌 5 ~6강 
+강좌 6강 
 
 - 솔루션 별 sample 연동 및 프로젝트 설정 (MTK, FIDO, 원가드)
   - RSLicense 발급 및 적용

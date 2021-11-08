@@ -50,9 +50,10 @@ public class APNSPush implements PushDispatcher {
         } catch (InvalidKeyException e) {
             e.printStackTrace();
         }
-
         final ApnsPayloadBuilder payloadBuilder = new SimpleApnsPayloadBuilder();
         payloadBuilder.setAlertBody("Example!");
+
+//        String pushMagicPayload = payloadBuilder.buildMdmPayload("pushMagic");
 
         Gson gson = new Gson();
 
@@ -67,6 +68,7 @@ public class APNSPush implements PushDispatcher {
 
         final PushNotificationFuture<SimpleApnsPushNotification, PushNotificationResponse<SimpleApnsPushNotification>>
                 sendNotificationFuture = apnsClient.sendNotification(pushNotification);
+
 
         try {
             final PushNotificationResponse<SimpleApnsPushNotification> pushNotificationResponse =

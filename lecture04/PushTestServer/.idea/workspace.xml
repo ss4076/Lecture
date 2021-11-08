@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34168455-d372-4f74-9cae-eb1c27a40f98" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/dto/Body.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lecture03/3강_certificate_provisioning_push.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lecture03/PushTestServer/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lecture03/PushTestServer/src/main/java/PushTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lecture03/PushTestServer/src/main/java/strategy/PushDispatcher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lecture03/PushTestServer/src/main/java/strategy/PushHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lecture03/PushTestServer/src/main/java/strategy/PushTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lecture03/PushTestServer/src/main/java/strategy/apns/APNSPush.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lecture03/PushTestServer/src/main/java/strategy/fcm/FCMPush.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lecture03/PushTestServer/src/main/java/strategy/fcm/FirebaseResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lecture03/PushTestServer/src/main/java/strategy/fcm/HeaderRequestInterceptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lecture03/PushTestServer/src/main/java/strategy/fcm/Notification.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lecture03/PushTestServer/src/main/java/strategy/fcm/Push.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lecture03/PushTestServer/src/main/java/util/AleadyClosedException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lecture03/PushTestServer/src/main/java/util/ThreadPool.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lecture03/PushTestServer/src/main/java/util/WorkQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strategy/apns/APNSPush.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strategy/apns/APNSPush.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lecture05/MDM-Protocol-Reference.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../lecture05/MDM-Protocol-Reference.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
