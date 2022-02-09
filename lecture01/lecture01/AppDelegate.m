@@ -81,5 +81,8 @@
         abort();
     }
 }
+-(void) test3 {
+    // 개발완료
+}
 
 @end
