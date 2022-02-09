@@ -58,6 +58,6 @@ void UncaughtExceptionsHandler(NSException *exception) {
 
 -(void) test2 {
     NSLog(@"test2");
-    dsdfa
+    // 끝
 }
 @end
