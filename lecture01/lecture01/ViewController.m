@@ -51,6 +51,16 @@ void UncaughtExceptionsHandler(NSException *exception) {
 //        self.pwTxtFld.text = @"";
 //    }
 }
+-(void) test1 {
+    NSLog(@"test");
+}
 
 
+-(void) test2 {
+    NSLog(@"test2");
+}
+
+-(void) test3 {
+    // qa 끝
+}
 @end
