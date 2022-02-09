@@ -55,4 +55,9 @@ void UncaughtExceptionsHandler(NSException *exception) {
     NSLog(@"test");
 }
 
+
+-(void) test2 {
+    NSLog(@"test2");
+    dsdfa
+}
 @end
