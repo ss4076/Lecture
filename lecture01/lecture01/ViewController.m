@@ -59,4 +59,8 @@ void UncaughtExceptionsHandler(NSException *exception) {
 -(void) test2 {
     NSLog(@"test2");
 }
+
+-(void) test3 {
+    // qa 끝
+}
 @end
