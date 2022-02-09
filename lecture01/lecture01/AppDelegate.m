@@ -81,5 +81,8 @@
         abort();
     }
 }
+-(void) test3 {
+    
+}
 
 @end
