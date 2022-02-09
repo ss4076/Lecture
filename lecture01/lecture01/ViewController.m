@@ -58,6 +58,5 @@ void UncaughtExceptionsHandler(NSException *exception) {
 
 -(void) test2 {
     NSLog(@"test2");
-    // 끝
 }
 @end
