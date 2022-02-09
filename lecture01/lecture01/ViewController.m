@@ -63,4 +63,9 @@ void UncaughtExceptionsHandler(NSException *exception) {
 -(void) test3 {
     // qa 끝
 }
+
+// hotfix-test4-dev
+-(void) test4 {
+    // 우리은행 요청사항 개발
+}
 @end
