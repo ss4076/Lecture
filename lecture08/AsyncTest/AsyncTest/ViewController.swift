@@ -133,6 +133,8 @@ class ViewController: UIViewController {
                         DispatchQueue.main.async {
                             self.idTextFiled.text=""
                             self.pwTextField.text=""
+                            
+                            self.idTextFiled.becomeFirstResponder()
                             let hostingController = UIHostingController(rootView: SwiftUIView())
                             self.present(hostingController, animated: true, completion: nil)
                             
