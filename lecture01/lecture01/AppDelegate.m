@@ -82,5 +82,8 @@
     }
 }
 
+- (void)develop {
+    NSLog(@"개발 중.");
+}
 
 @end

@@ -1,0 +1,12 @@
+
+/* Class = "UITextField"; placeholder = "input PW"; ObjectID = "7bv-Tz-k1N"; */
+"7bv-Tz-k1N.placeholder" = "input PW";
+
+/* Class = "UITextField"; placeholder = "input ID"; ObjectID = "bOi-TL-pdO"; */
+"bOi-TL-pdO.placeholder" = "input ID";
+
+/* Class = "UIButton"; configuration.title = "login"; ObjectID = "vG5-Or-sek"; */
+"vG5-Or-sek.configuration.title" = "login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vG5-Or-sek"; */
+"vG5-Or-sek.normalTitle" = "Button";
