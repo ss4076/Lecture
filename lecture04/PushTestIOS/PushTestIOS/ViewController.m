@@ -63,5 +63,8 @@
 -(void)fun3 {
     // hana issue success
 }
+-(void)mms {
+    // 1
+}
 
 @end
