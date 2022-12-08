@@ -50,7 +50,9 @@
     // Do any additional setup after loading the view.
 }
 
-
+-(void)sms {
+    // 1
+}
 - (void)test1 {
     // 1
     // 2
@@ -62,6 +64,9 @@
 }
 -(void)fun3 {
     // hana issue success
+}
+-(void)mms {
+    // 1
 }
 
 @end
