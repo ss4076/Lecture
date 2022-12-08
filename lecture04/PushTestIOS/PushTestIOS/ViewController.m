@@ -53,6 +53,7 @@
 - (void)test1 {
     // 1
     // 2
+    // 3
 }
 
 - (void)test2 {
