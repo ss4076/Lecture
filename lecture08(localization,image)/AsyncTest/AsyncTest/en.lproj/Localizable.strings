@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  AsyncTest
+
+  Created by dong jun park on 2022/03/11.
+  
+*/
+"LOGIN"     = "login";
+"INPUT_ID"  = "input ID";
+"INPUT_PW"  = "input PW";
+"SUCCESS"   = "success";
+"FAIL"      = "failure";

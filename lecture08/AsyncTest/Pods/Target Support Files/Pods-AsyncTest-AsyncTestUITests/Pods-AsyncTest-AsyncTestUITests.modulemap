@@ -1,6 +1,0 @@
-framework module Pods_AsyncTest_AsyncTestUITests {
-  umbrella header "Pods-AsyncTest-AsyncTestUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

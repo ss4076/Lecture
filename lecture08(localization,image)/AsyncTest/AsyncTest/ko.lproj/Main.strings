@@ -1,0 +1,12 @@
+
+/* Class = "UITextField"; placeholder = "PW를 입력해주세요"; ObjectID = "7bv-Tz-k1N"; */
+"7bv-Tz-k1N.placeholder" = "PW를 입력해주세요";
+
+/* Class = "UITextField"; placeholder = "ID를 입력해주세요"; ObjectID = "bOi-TL-pdO"; */
+"bOi-TL-pdO.placeholder" = "ID를 입력해주세요";
+
+/* Class = "UIButton"; configuration.title = "로그인"; ObjectID = "vG5-Or-sek"; */
+"vG5-Or-sek.configuration.title" = "로그인";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vG5-Or-sek"; */
+"vG5-Or-sek.normalTitle" = "Button";

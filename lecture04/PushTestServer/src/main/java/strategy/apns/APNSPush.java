@@ -33,23 +33,23 @@ public class APNSPush implements PushDispatcher {
         System.out.println("send APNS Notification ...");
         System.out.println("##############################");
 
-//        final ApnsClient apnsClient = new ApnsClientBuilder()
-//                .setApnsServer(ApnsClientBuilder.DEVELOPMENT_APNS_HOST)
-//                .setClientCredentials(new File("zkp_push_dev.p12"), "qwer1234!@")
-//                .build();
+        final ApnsClient apnsClient = new ApnsClientBuilder()
+                .setApnsServer(ApnsClientBuilder.DEVELOPMENT_APNS_HOST)
+                .setClientCredentials(new File("zkp_push_dev.p12"), "qwer1234!@")
+                .build();
 
-        ApnsClient apnsClient = null;
-        try {
-            apnsClient = new ApnsClientBuilder()
-                    .setApnsServer(ApnsClientBuilder.DEVELOPMENT_APNS_HOST)
-                    .setSigningKey(ApnsSigningKey.loadFromPkcs8File(new File("AuthKey_98Z3WR4R8D.p8"),
-                            "RXBUP6L48V", "98Z3WR4R8D"))
-                    .build();
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        } catch (InvalidKeyException e) {
-            e.printStackTrace();
-        }
+//        ApnsClient apnsClient = null;
+//        try {
+//            apnsClient = new ApnsClientBuilder()
+//                    .setApnsServer(ApnsClientBuilder.DEVELOPMENT_APNS_HOST)
+//                    .setSigningKey(ApnsSigningKey.loadFromPkcs8File(new File("AuthKey_98Z3WR4R8D.p8"),
+//                            "RXBUP6L48V", "98Z3WR4R8D"))
+//                    .build();
+//        } catch (NoSuchAlgorithmException e) {
+//            e.printStackTrace();
+//        } catch (InvalidKeyException e) {
+//            e.printStackTrace();
+//        }
         final ApnsPayloadBuilder payloadBuilder = new SimpleApnsPayloadBuilder();
         payloadBuilder.setAlertBody("Example!");
 

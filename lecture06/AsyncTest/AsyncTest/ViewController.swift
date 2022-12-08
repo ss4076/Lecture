@@ -11,14 +11,14 @@ import RxCocoa
 import SwiftUI
 
 
-class 나중에생기는데이터<T> {
+class 옵져버블<T> {
     
     private let task:(@escaping(T) -> Void) -> Void
     
     init (task: @escaping(@escaping(T) -> Void) -> Void) {
         self.task = task
     }
-    func 나중에오면(_ f: @escaping(T) -> Void) {
+    func 구독하기(_ f: @escaping(T) -> Void) {
         task(f)
     }
 }
@@ -60,9 +60,9 @@ class ViewController: UIViewController {
         }
     }
     
-    func downloadImage(url: String) -> 나중에생기는데이터<UIImage?> {
+    func downloadImage(url: String) -> 옵져버블<UIImage?> {
         
-        return 나중에생기는데이터() { f in
+        return 옵져버블() { f in
             DispatchQueue.global().async  {
                 let url = URL(string: self.IMAGE_URL)!
                 let data = try! Data(contentsOf: url)
@@ -138,18 +138,16 @@ class ViewController: UIViewController {
     @IBAction func onLoad(_ sender: Any) {
         
         // UIKit 사용
-        setActivityIndicator(true)
-        downloadImage(url: IMAGE_URL) { image in
-            self.imageView.image = image
-            self.activeIndicator.stopAnimating()
-            let hostingController = UIHostingController(rootView: SwiftUIView())
-            self.present(hostingController, animated: true, completion: nil)
-        }
+//        setActivityIndicator(true)
+//        downloadImage(url: IMAGE_URL) { image in
+//            self.imageView.image = image
+//            self.activeIndicator.stopAnimating()
+//        }
         
         // RxSwift 따라하기
 //        setActivityIndicator(true)
-//        let image: 나중에생기는데이터<UIImage?> = downloadImage(url: IMAGE_URL)
-//        _ = image.나중에오면 { image in
+//        let image: 옵져버블<UIImage?> = downloadImage(url: IMAGE_URL)
+//        _ = image.구독하기 { image in
 //            self.imageView.image = image
 //            self.setActivityIndicator(false)
 //            let hostingController = UIHostingController(rootView: SwiftUIView())
@@ -194,14 +192,14 @@ class ViewController: UIViewController {
         
 //        setActivityIndicator(true)
 //
-//        downloadImageRx(url: IMAGE_URL)
-//            .debug()
-//            .map { $0 }
-//            .observeOn(MainScheduler.instance)
-//            .subscribe(onNext: { [weak self] image in
-//                self?.imageView.image = image
-//                self?.setActivityIndicator(false)
-//            })
-//            .disposed(by: disposeBag)
+        downloadImageRx(url: IMAGE_URL)
+            .debug()
+            .map{ $0 }
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { [weak self] image in
+                self?.imageView.image = image
+                self?.setActivityIndicator(false)
+            })
+            .disposed(by: disposeBag)
     }
 }

@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  AsyncTest
+
+  Created by dong jun park on 2022/03/11.
+  
+*/
+"LOGIN"     = "로그인";
+"INPUT_ID"  = "ID를 입력해주세요.";
+"INPUT_PW"  = "PW를 입력해주세요.";
+"SUCCESS"   = "성공";
+"FAIL"      = "실패";
