@@ -50,5 +50,8 @@
     // Do any additional setup after loading the view.
 }
 
+-(void)fun3 {
+    // hana issue success
+}
 
 @end
