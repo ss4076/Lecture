@@ -50,12 +50,18 @@
     // Do any additional setup after loading the view.
 }
 
+
 - (void)test1 {
     // 1
     // 2
+    // 3
+}
+- (void)test2 {
+    // 1
+    // 2
+}
+-(void)fun3 {
+    // hana issue success
 }
 
-- (void)test2 {
-    
-}
 @end
