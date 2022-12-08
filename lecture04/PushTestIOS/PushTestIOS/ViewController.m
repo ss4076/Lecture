@@ -55,7 +55,8 @@
  
 }
 - (void)test2 {
-    
+    // 1
+    // 2
 }
 -(void)fun3 {
     // hana issue success
